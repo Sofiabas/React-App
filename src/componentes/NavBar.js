@@ -1,4 +1,6 @@
 import CartWidget from "./CartWidget";
+import React from "react";
+import {NavLink} from 'react-router-dom';
 
 function NavBar(){
 return (
@@ -13,7 +15,7 @@ return (
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
     <div class="container">
-      <a class="navbar-brand" href="#"> EUREKA</a>
+      <NavLink class="navbar-brand active" to='/'> EUREKA</NavLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,7 +26,10 @@ return (
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
+            <NavLink class="nav-link pasive" to='/category/termos'>Termos</NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink class="nav-link pasive" to='/category/tazon'>Tazones</NavLink>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pedidos</a>

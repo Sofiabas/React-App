@@ -7,7 +7,7 @@ const ItemDetail = ({data}) => {
     <img src={data.image} class="card-img-top" alt="termo boca"></img>
     <div class="card-body">
       <h1 class="card-title">{data.title}</h1>
-      <p class="card-text">{data.describe} </p>
+      <p class="card-text">{data.detalle} </p>
       <span>{data.price} </span>
       <p>Stock Disponible</p>
       <button class="btn btn-success">Añadir al Carrito</button>
