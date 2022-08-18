@@ -1,5 +1,4 @@
 import React, {useEffect,useState} from 'react'
-import ItemCount from '../componentes/ItemCount';
 import './ItemListContainer.css';
 import ItemList from '../componentes/ItemList';
 import {useParams} from 'react-router-dom';
@@ -30,14 +29,10 @@ useEffect(()=>{
   } else {getData.then(res => setData (res))} 
 },[categoryId])
 
-const onAdd=(quantity)=>{
-console.log(`Añadio ${quantity} unidades`);
-}
+
   return (
     <>
     <h1 className='titulo'>{props.greeting} Eureka</h1>
-    <div><ItemCount stock={30} initial={1} onAdd={onAdd} /> 
-    </div>
     <ItemList data={data}/>
     </>
   )

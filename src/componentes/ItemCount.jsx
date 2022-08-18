@@ -12,11 +12,9 @@ const ClickCounter = ({stock,initial,onAdd} ) =>{
    }
        return(
         <>
-        <h1>CONTADOR DE CLICK</h1>
-        <h2> Clicks:{click}</h2>
+         <button disabled={click <=1 } onClick={decremento} class="btn btn-primary">-</button>
+        <span> Cantidad:{click}</span>
         <button disabled={click >= stock} onClick={incremento} class="btn btn-primary">+</button>
-        <button disabled={click <=1 } onClick={decremento} class="btn btn-primary">-</button>
-        <button onClick={()=> setClick(0)} class="btn btn-danger">Reseteo</button>
         <div>
         <button  disabled={click <= 0 } onClick={()=> onAdd(click)} class="btn btn-success">Añadido al Carrito</button>
         </div>

@@ -15,7 +15,7 @@ return (
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
     <div class="container">
-      <NavLink class="navbar-brand active" to='/'> EUREKA</NavLink>
+      <NavLink class="navbar-brand" to='/'> EUREKA</NavLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,10 +26,10 @@ return (
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <NavLink class="nav-link pasive" to='/category/termos'>Termos</NavLink>
+            <NavLink class="nav-link" to='/category/termos'>Termos</NavLink>
           </li>
           <li class="nav-item">
-            <NavLink class="nav-link pasive" to='/category/tazon'>Tazones</NavLink>
+            <NavLink class="nav-link" to='/category/tazon'>Tazones</NavLink>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pedidos</a>
