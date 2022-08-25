@@ -19,7 +19,7 @@ const {addItem} = useCartContext ();
     <div class="card-body">
       <h1 class="card-title">{data.title}</h1>
       <p class="card-text">{data.detalle} </p>
-      <span>{data.price} </span>
+      <span> $ {data.price} </span>
       <p>Stock Disponible</p>
       {
         gotoCarrito

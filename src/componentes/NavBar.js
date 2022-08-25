@@ -39,7 +39,7 @@ return (
           </li>
         </ul>
         <div>
-        <CartWidget/>
+      <NavLink class="nav-link" to='/cart'> <CartWidget/> </NavLink>
         </div>
       </div>
     </div>
