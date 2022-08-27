@@ -9,6 +9,7 @@ import Footer from './componentes/Footer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import CartProvider from './CartContext';
 import Cart from './componentes/Cart';
+import './services/firebase';
 
 function App() {
   return (

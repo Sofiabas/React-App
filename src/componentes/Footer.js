@@ -4,7 +4,7 @@ import Twitter from './IconosSocial/Twitter'
 function Footer() {
   return (
 <html lang="es">
-<body class="d-flex h-100 text-center fondo back">
+<body className="d-flex h-100 text-center fondo back">
       <div class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">

@@ -26,16 +26,16 @@ return (
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <NavLink class="nav-link" to='/category/termos'>Termos</NavLink>
+            <NavLink className={"nav-link"} to='/category/termos'>Termos</NavLink>
           </li>
           <li class="nav-item">
-            <NavLink class="nav-link" to='/category/tazon'>Tazones</NavLink>
+            <NavLink className={"nav-link"} to='/category/tazon'>Tazones</NavLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pedidos</a>
+            <a className={"nav-link"} href="#">Pedidos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a className={"nav-link"} href="#">Contacto</a>
           </li>
         </ul>
         <div>
