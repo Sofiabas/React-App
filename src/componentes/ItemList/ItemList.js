@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from '../componentes/Item';
+import Item from '../Item';
 
 const ItemList = ({data=[]}) => {
   return (

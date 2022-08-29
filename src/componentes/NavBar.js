@@ -1,4 +1,4 @@
-import CartWidget from "./CartWidget";
+import CartWidget from "./CartWidget/CartWidget";
 import React from "react";
 import {NavLink} from 'react-router-dom';
 
@@ -31,12 +31,6 @@ return (
           <li class="nav-item">
             <NavLink className={"nav-link"} to='/category/tazon'>Tazones</NavLink>
           </li>
-          <li class="nav-item">
-            <a className={"nav-link"} href="#">Pedidos</a>
-          </li>
-          <li class="nav-item">
-            <a className={"nav-link"} href="#">Contacto</a>
-          </li>
         </ul>
         <div>
       <NavLink class="nav-link" to='/cart'> <CartWidget/> </NavLink>
@@ -44,9 +38,8 @@ return (
       </div>
     </div>
     <div class="text-end">
-          <button type="button" class="btn btn-light text-dark me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
-        </div>
+    <NavLink  className="btn btn-primary" to='/cuenta'>Iniciar Sesion</NavLink>
+      </div>
   </nav>
 
   </header>

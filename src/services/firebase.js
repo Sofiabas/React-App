@@ -1,4 +1,6 @@
 import { initializeApp } from "firebase/app";
+import {getFirestore} from 'firebase/firestore';
+
 const firebaseConfig = {
   apiKey: "AIzaSyC1ZRldKNJsjeb8iZa91_PbdesvCJYsb3c",
   authDomain: "eureka-react.firebaseapp.com",
@@ -8,4 +10,7 @@ const firebaseConfig = {
   appId: "1:270353555921:web:c0b08cc92d2a2bf9e780f0"
 };
 
- initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+
+ const firestoreDB = getFirestore(app);
+ export default firestoreDB;
