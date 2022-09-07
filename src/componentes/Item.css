@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.forma{
+    background-color: var(--black);
+    border-radius: 5rem;
+    box-shadow: 7px 5px 14px -6px rgb(19, 17, 17);
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.font{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+

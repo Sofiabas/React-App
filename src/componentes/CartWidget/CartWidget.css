@@ -2,8 +2,15 @@
     color: antiquewhite;
     width: 50px;
     height: 20px;
-    margin-right: 50px;
 }
 .numeroCarrito{
-    color: rgb(255, 16, 16);
+    color: rgb(255, 255, 255);
+    top: 0;
+    right: 10;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-style: italic;
+    font-size: 12px;
+  
 }

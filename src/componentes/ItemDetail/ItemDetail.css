@@ -1,4 +1,43 @@
-.card{
-margin-left: 150px;
-margin-top: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.img{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(59, 56, 56), -1em 0 0.4em rgb(37, 34, 34) ;
+    margin-top: 10%;
+}
+.container{
+    column-count: 2; 
+    display: flex;
+    flex-direction: row;
+}
+.posicion{
+ margin-top: 100px;
+ margin-left: 100px;
+
+}
+.place{
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.tipo{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.tamanio{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
+.font{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btn{
+    text-decoration: none;
 }

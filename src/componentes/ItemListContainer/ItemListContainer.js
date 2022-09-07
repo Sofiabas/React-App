@@ -1,6 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
+import Grid from '@mui/material/Grid';
 import {useParams} from 'react-router-dom';
 import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore';
 
@@ -21,9 +22,11 @@ useEffect(()=>{
 
 
   return (
-    <>
-    <h1 className='titulo'>{props.greeting} Eureka</h1>
+  <>
+    <h1 className='titulo mt-3'  >{props.greeting} Eureka - Tienda de Regalos</h1>
+    <Grid container rowSpacing={1} spacing={2}  >
     <ItemList data={data}/>
+    </Grid>
     </>
   )
 }

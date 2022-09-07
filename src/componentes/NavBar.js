@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget/CartWidget";
+import Brand from "./Brand/Brand";
 import React from "react";
 import {NavLink} from 'react-router-dom';
 
@@ -15,15 +16,11 @@ return (
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
     <div class="container">
-      <NavLink class="navbar-brand" to='/'> EUREKA</NavLink>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+      <NavLink to='/'> <Brand/> </NavLink>
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <NavLink className={"nav-link active"} to='/'> Inicio </NavLink>
           </li>
           <li class="nav-item">
             <NavLink className={"nav-link"} to='/category/termos'>Termos</NavLink>
@@ -31,17 +28,22 @@ return (
           <li class="nav-item">
             <NavLink className={"nav-link"} to='/category/tazon'>Tazones</NavLink>
           </li>
+          <li class="nav-item">
+            <NavLink className={"nav-link"} to='/category/mate'>Mates</NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink className={"nav-link"} to='/category/cartuchera'>Cartucheras</NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink className={"nav-link"} to='/category/botella'>Botellas</NavLink>
+          </li>
         </ul>
         <div>
       <NavLink class="nav-link" to='/cart'> <CartWidget/> </NavLink>
         </div>
       </div>
     </div>
-    <div class="text-end">
-    <NavLink  className="btn btn-primary" to='/cuenta'>Iniciar Sesion</NavLink>
-      </div>
   </nav>
-
   </header>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
@@ -50,10 +52,6 @@ return (
 }
 
 export default NavBar;
-
-
-
-
      
      
    

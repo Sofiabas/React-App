@@ -11,13 +11,14 @@ import CartProvider from './CartContext';
 import Cart from './componentes/Cart/Cart';
 import './services/firebase';
 import Registro from './componentes/UserForm/Registro';
-import Cuenta from './componentes/Cuenta/Cuenta';
+import Header from './componentes/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>    
  <CartProvider>
+  <Header/>
      <NavBar/> 
      <Routes>
         <Route path='/' element={<ItemListContainer/>}/>
@@ -25,10 +26,9 @@ function App() {
         <Route path='/item/:detalleId' element={<ItemDetailContainer/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/registro' element={<Registro/>}/>
-        <Route path='/cuenta' element={<Cuenta/>}/>
       </Routes>
-</CartProvider>
       <Footer/>
+</CartProvider>
       </BrowserRouter>
     </div>
   );

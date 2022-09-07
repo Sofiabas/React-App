@@ -1,15 +1,18 @@
 import React from 'react'
-import { AiOutlineTwitter} from "react-icons/ai";
-import {AiOutlineFacebook} from "react-icons/ai";
-import {AiOutlineInstagram} from "react-icons/ai";
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+
 
 
 function Twitter() {
     return (
-      <div >
-<AiOutlineTwitter/>
-<AiOutlineFacebook/>
-<AiOutlineInstagram/>
+      <div className='p-2'>
+<TwitterIcon/>
+<TelegramIcon/>
+<InstagramIcon/>
+<FacebookIcon/>
       </div>
     )
   }
